@@ -1,0 +1,36 @@
+/*Goal: practice creating and using a class
+** Use the class 'Dog' to create to 
+** instances of the class, dog1 and dog2.
+** Assign dog1 the name: Trixie
+** Assign dog2 the name: Kali
+** Assign dog1 the license #1234
+** Assign dog2 the license #5678
+** Print the information for each dog.
+*/
+
+
+#include"main.hpp"
+
+using namespace std;
+
+int main()
+{
+    
+    Dog dog1, dog2;
+    
+
+    dog1.setName("Trixie"); //assign a value to the student name
+    dog1.setLicenseNumber(1234); //assign a value to the student id number
+    dog2.setName("Kali"); //assign a value to the student name
+    dog2.setLicenseNumber(5678);    
+  
+    
+    //The second is to access each member of the class using the get functions
+    cout<<"Using the dog access functions\n";
+    cout<<"dog1 name = "<<dog1.getName()<<"\n";
+    cout<<"dog1 License Number = "<<dog1.getLicenseNumber()<<"\n";
+    cout<<"dog2 name = "<<dog2.getName()<<"\n";
+    cout<<"dog2 License Number = "<<dog2.getLicenseNumber()<<"\n";    
+    
+    return 0; 
+}
