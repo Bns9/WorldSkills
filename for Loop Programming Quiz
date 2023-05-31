@@ -1,0 +1,30 @@
+/*Write a program that asks a user for five numbers.
+**Print out the sum and average of the five numbers.
+*/
+
+/*Goal: examine a for loop example. */
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a[5];
+    double sum =0;
+     for(int i=0; i< 5;i++)
+    {
+    cout<<"enter 5 numbers:"<<endl;
+    cin>>a[i];
+    }
+    
+    for(int i=0; i< 5;i++)
+    {
+     sum+= a[i];
+     
+    }
+    double avg;
+    avg = sum/5;
+    cout<<"sum is: "<<sum<<", avg is: "<<avg;
+    
+    return 0;
+}
