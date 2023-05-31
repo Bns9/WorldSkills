@@ -1,0 +1,42 @@
+/*Goal: practice creating and using classes.
+**Create a class called Cat.
+**Create the following members:
+**private members: name, breed, age
+**public members: setName, setBreed,setAge
+**getName, getBreed, getAge, printInfo*/
+
+/*Goal: practice creating and using a class
+** Use the class 'Dog' to create to 
+** instances of the class, dog1 and dog2.
+** Assign dog1 the name: Trixie
+** Assign dog2 the name: Kali
+** Assign dog1 the license #1234
+** Assign dog2 the license #5678
+** Print the information for each dog.
+*/
+
+
+#include"main.hpp"
+
+using namespace std;
+
+int main()
+{
+    
+    Cat cat1;
+    
+
+    cat1.setName("Trixie"); //assign a value to the student name
+    cat1.setBreed("Yemeni"); //assign a value to the student name
+    cat1.setAge(4); //assign a value to the student id number
+
+    
+    //The second is to access each member of the class using the get functions
+    cout<<"Using the dog access functions\n";
+    cout<<"cat1 name = "<<cat1.getName()<<"\n";
+    cout<<"cat1 breed = "<<cat1.getBreed()<<"\n";
+    cout<<"cat1 age = "<<cat1.getAge()<<"\n";
+    cat1.printInfo();
+    
+    return 0; 
+}
