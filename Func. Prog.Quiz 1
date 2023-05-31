@@ -1,0 +1,17 @@
+/*Goal: write a function called printMessage()
+**that prints: Functions
+*/
+#include<iostream>
+
+
+void printMessage() 
+{
+    std::cout<<"Functions";
+}
+int main()
+{
+    printMessage();
+    return 0;
+}
+
+//note, the definition is conventionally placed after main
