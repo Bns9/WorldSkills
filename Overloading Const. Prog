@@ -1,0 +1,70 @@
+/*Create a class that has four constructors:
+* one that accepts no input parameters
+* one that accepts name
+* one that accepts license number
+* one that accepts name and license number
+* The default values are:
+name = NA
+license = 0
+*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+//header file for main.hpp
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Dog
+{
+    string name;
+    int licenseNumber;
+    public:
+        Dog();
+        Dog(string nameIn, int licenseNumberIn);
+        Dog(string nameIn);
+        Dog(int licenseNumberIn);
+
+        string getName();
+        int getLicenseNumber();
+};
+
+Dog::Dog()
+{
+    name = "NA";
+    licenseNumber = 0;
+}
+
+Dog::Dog(string namenIn, int licenseNumberIn)
+{
+    name = namenIn;
+    licenseNumber = licenseNumberIn;
+}
+
+Dog::Dog(string namenIn)
+{
+    name = namenIn;
+    licenseNumber = 0;
+}
+
+Dog::Dog(int licenseNumberIn)
+{
+    name = "NA";
+    licenseNumber = licenseNumberIn;
+}
+
+string Dog::getName()
+{
+     return name;
+}
+
+int Dog::getLicenseNumber()
+{
+     return licenseNumber;
+}
+
+
+
