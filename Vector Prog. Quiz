@@ -1,0 +1,23 @@
+/*Create a vector of floats called vFloat. 
+* vFloat should have an iterator. 
+*/
+#include<iostream> 
+#include<vector>
+//TODO: include the necessary libraries
+using namespace std;
+
+int main ()
+{
+  //TODO: instantiate vFloat vector
+  vector<float> vFloat;  
+
+  std::cout<<"vFloat has "<<vFloat.size()<<" elements\n";
+   vFloat.resize(10);
+  //Changing the size of vectorInts to 10
+  //TODO: Change the size of vFloat to 10 elements
+  
+  std::cout<<"\n\n vFloat now has "<<vFloat.size()<<" elements\n";
+ 
+  return 0;
+}
+
